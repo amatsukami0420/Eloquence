@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Study Room | Eloquence</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.css"
+    />
+    <script src="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-light d-flex flex-column">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand text-uppercase" href="index.html">
+          <i class="bi bi-diagram-3-fill text-warning me-2"></i>
+          <span class="text-warning fw-bold">ELO</span>QUENCE
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Dashboard</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="repertoire.html">Repertoire</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="study.html">Study Room</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="analysis.html">Analysis</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+          <div class="d-flex align-items-center">
+            <a
+              href="profile.html"
+              class="text-white text-decoration-none fw-semibold"
+            >
+              <i class="bi bi-person-circle fs-5 me-2 align-middle"></i>
+              FA24-BCS-110
+            </a>
+            <a
+              href="login.html"
+              class="btn btn-outline-light btn-sm ms-3 text-uppercase fw-bold"
+              >Sign Out</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container my-5">
+      <div class="row mb-4">
+        <div class="col">
+          <h1 class="fw-bold">Study Room</h1>
+          <p class="text-muted">
+            Interactive theory session:
+            <span class="fw-semibold">Sicilian Defense</span>
+          </p>
+          <hr />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-7 mb-4">
+          <div
+            id="myBoard"
+            class="shadow-sm border rounded bg-white p-2"
+            style="width: 100%"
+          ></div>
+
+          <div class="mt-4 text-center">
+            <button class="btn btn-dark px-4 me-2" id="startBtn">
+              <i class="bi bi-skip-start-fill"></i> Reset
+            </button>
+            <button class="btn btn-outline-dark px-4" id="clearBtn">
+              <i class="bi bi-trash"></i> Clear
+            </button>
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <h5 class="fw-bold mb-3">
+            <i class="bi bi-list-nested me-2"></i>Main Variations
+          </h5>
+          <div class="accordion shadow-sm mb-4" id="theoryAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#varOne"
+                >
+                  The Najdorf (6. Bg5)
+                </button>
+              </h2>
+              <div
+                id="varOne"
+                class="accordion-collapse collapse show"
+                data-bs-parent="#theoryAccordion"
+              >
+                <div class="accordion-body">
+                  <p class="small text-muted">
+                    1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Bg5
+                  </p>
+                  <strong>Goal:</strong> High pressure on the d6 pawn and
+                  preparing to castle queenside for a sharp attack.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#varTwo"
+                >
+                  The Dragon (Yugoslav Attack)
+                </button>
+              </h2>
+              <div
+                id="varTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#theoryAccordion"
+              >
+                <div class="accordion-body">
+                  <p class="small text-muted">
+                    1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6
+                  </p>
+                  <strong>Goal:</strong> Fiannchetto the Bishop on g7 and target
+                  the long diagonal. Extremely tactical.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h5 class="fw-bold mb-3">
+            <i class="bi bi-lightbulb me-2"></i>Key Concepts
+          </h5>
+          <ul class="list-group shadow-sm">
+            <li
+              class="list-group-item d-flex justify-content-between align-items-center"
+            >
+              Central Control (d4/e4)
+              <span class="badge bg-primary rounded-pill">High</span>
+            </li>
+            <li
+              class="list-group-item d-flex justify-content-between align-items-center"
+            >
+              King Safety
+              <span class="badge bg-danger rounded-pill">Critical</span>
+            </li>
+            <li
+              class="list-group-item d-flex justify-content-between align-items-center"
+            >
+              Piece Coordination
+              <span class="badge bg-dark rounded-pill">Moderate</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-dark text-secondary text-center py-4 mt-auto shadow-lg">
+      <div class="container">
+        <p class="mb-0 small fw-semibold">
+          &copy; 2026 ELOQUENCE. ENGINEERED FOR THE 64 SQUARES. Muhammad Waleed,
+          FA24-BCS-110. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      var board = Chessboard("myBoard", {
+        draggable: true,
+        dropOffBoard: "snapback",
+        position: "start",
+        pieceTheme:
+          "https://chessboardjs.com/img/chesspieces/wikipedia/{piece}.png",
+      });
+
+      $("#startBtn").on("click", board.start);
+      $("#clearBtn").on("click", board.clear);
+
+      $(window).resize(board.resize);
+    </script>
+  </body>
+</html>

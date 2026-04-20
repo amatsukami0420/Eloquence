@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eloquence | Master Your Repertoire</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="d-flex flex-column">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand text-uppercase" href="index.html">
+          <i class="bi bi-diagram-3-fill text-warning me-2"></i>
+          <span class="text-warning fw-bold">ELO</span>QUENCE
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Dashboard</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="repertoire.html">Repertoire</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="study.html">Study Room</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="analysis.html">Analysis</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+          <div class="d-flex align-items-center">
+            <a
+              href="profile.html"
+              class="text-white text-decoration-none fw-semibold"
+            >
+              <i class="bi bi-person-circle fs-5 me-2 align-middle"></i>
+              FA24-BCS-110
+            </a>
+            <a
+              href="login.html"
+              class="btn btn-outline-light btn-sm ms-3 text-uppercase fw-bold"
+              >Sign Out</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+    <header
+      id="Carousel"
+      class="carousel carousel-light slide shadow-sm"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#Carousel"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#Carousel"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#Carousel"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="5000">
+          <img
+            src="images\monitor.jfif"
+            class="d-block w-100"
+            alt="White Chess Pieces"
+          />
+          <div class="carousel-caption d-none d-md-block pb-5">
+            <h1 class="display-4 fw-bold text-uppercase">Master Your Lines</h1>
+            <p class="lead fw-medium">
+              Build, memorize, and execute your opening repertoire with
+              precision.
+            </p>
+          </div>
+        </div>
+
+        <div class="carousel-item" data-bs-interval="5000">
+          <img
+            src="images\monitor.jfif"
+            class="d-block w-100"
+            alt="Analysis Board"
+          />
+          <div class="carousel-caption d-none d-md-block pb-5">
+            <h1 class="display-4 fw-bold text-uppercase">
+              Engine Level Analysis
+            </h1>
+            <p class="lead fw-medium">
+              Find the critical deviations in your over-the-board and online
+              games.
+            </p>
+          </div>
+        </div>
+
+        <div class="carousel-item" data-bs-interval="5000">
+          <img
+            src="images\monitor.jfif"
+            class="d-block w-100"
+            alt="Tournament Hall"
+          />
+          <div class="carousel-caption d-none d-md-block pb-5">
+            <h1 class="display-4 fw-bold text-uppercase">
+              Track Your Progress
+            </h1>
+            <p class="lead fw-medium">
+              Monitor your win rates and push toward your rating goals.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#Carousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#Carousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </header>
+    <main class="container my-5">
+      <div class="row mb-5 text-center">
+        <div class="col">
+          <h2 class="fw-bold">Welcome back to the grid.</h2>
+          <p class="text-muted">
+            Select a module to begin your training session.
+          </p>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm text-center p-3">
+            <div class="card-body">
+              <i class="bi bi-database display-4 text-dark mb-3"></i>
+              <h4 class="card-title fw-bold">Database</h4>
+              <p class="card-text text-muted mb-4">
+                Review your active systems.
+              </p>
+              <a
+                href="repertoire.html"
+                class="btn btn-outline-dark w-100 text-uppercase fw-semibold"
+                >View Repertoire</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm text-center p-3">
+            <div class="card-body">
+              <i class="bi bi-crosshair display-4 text-dark mb-3"></i>
+              <h4 class="card-title fw-bold">Study Room</h4>
+              <p class="card-text text-muted mb-4">
+                Walk through critical variations.
+              </p>
+              <a
+                href="study.html"
+                class="btn btn-outline-dark w-100 text-uppercase fw-semibold"
+                >Start Training</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm text-center p-3">
+            <div class="card-body">
+              <i class="bi bi-cpu display-4 text-dark mb-3"></i>
+              <h4 class="card-title fw-bold">PGN Analysis</h4>
+              <p class="card-text text-muted mb-4">
+                Analyze where you blundered.
+              </p>
+              <a
+                href="analysis.html"
+                class="btn btn-outline-dark w-100 text-uppercase fw-semibold"
+                >Analyze Now</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-dark text-secondary text-center py-4 mt-auto shadow-lg">
+      <div class="container">
+        <p class="mb-0 small fw-semibold">
+          &copy; 2026 ELOQUENCE. ENGINEERED FOR THE 64 SQUARES. Muhammad Waleed,
+          FA24-BCS-110. All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
